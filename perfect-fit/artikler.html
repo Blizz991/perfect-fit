@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Perfect Fit - Artikler og Gode råd</title>
+    <meta name="description" content="Perfect Fit giver dig gode råd og spændende artikler om plejen af din kat" />
+    <!-- Favicon from the official website: https://www.perfect-fit.dk/ -->
+    <link rel="icon" type="image/png" href="favicon.ico" />
+    <link rel="stylesheet" href="css/MainStyle.min.css">
+    <!-- Load fonts from google -->
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,600%7CRoboto" rel="stylesheet">
+    <!-- Load fontawesome 5.6.1 for icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html">
+                <!-- Logo is from the official website: https://www.perfect-fit.dk/ -->
+                <img id="nav-logo" src="images/pf-logo-cat.svg" alt="Perfect Fit logo">
+            </a>
+            <div id="nav-links">
+                <a href="index.html">Forside</a>
+                <a class="active" href="artikler.html">Gode råd</a>
+                <a href="perfectfit-plus.html">Bliv medlem af Perfect Fit +</a>
+                <a href="filosofi.html">Vores filosofi</a>
+            </div>
+            <i id="nav-toggle" class="fas fa-bars fa-3x"></i>
+        </nav>
+        <div id="responsive-nav" class="hide">
+            <a href="index.html">Forside</a>
+            <a class="active" href="artikler.html">Gode råd</a>
+            <a href="perfectfit-plus.html">Bliv medlem af Perfect Fit +</a>
+            <a href="filosofi.html">Vores filosofi</a>
+        </div>
+    </header>
+    <main id="article-main">
+        <div id="article-container">
+            <h1>Oversigt</h1>
+            <h2>Her finder du alle vores gode råd, og artikler</h2>
+            <div class="article-box">
+                <div class="article-box-left">
+                    <img class="img-responsive" src="images/320/frontpage/cat_feed_article_x320.jpg" srcset="images/320/frontpage/cat_feed_article_x320.jpg 140w,
+                        images/1170/frontpage/cat_feed_article_x1170.jpg 200w"
+                        sizes="(max-width: 500px) 140px, 200px" alt="Kat slikker sig om munden - Artikel billede">
+                </div>
+                <div class="article-box-right">
+                    <p>Din kats foder er noget af det vigtigste. </p>
+                    <p>Her er vores nye produkter</p>
+                    <a href="artikler/nye-produkter.html" class="article-btn btn btn-green">Læs mere <i class="fas fa-chevron-right"></i></a>
+                </div>
+            </div>
+
+            <div class="article-box">
+                <div class="article-box-left">
+                    <img class="img-responsive" src="images/320/frontpage/cat_move_article_x320.jpg" srcset="images/320/frontpage/cat_move_article_x320.jpg 140w,
+                            images/1170/frontpage/cat_move_article_x1170.jpg 200w"
+                        sizes="(max-width: 500px) 140px, 200px" alt="Kat udendørs i græs - Artikel billede">
+                </div>
+                <div class="article-box-right">
+                    <p>
+                        Det er vigtigt at sørge for, at din kat får bevæget sig.
+                        Her er nogle gode råd til at give den mulighed for det.</p>
+                    <a href="#" onclick="alert('Ikke tilgængelig, pga. manglende tid - klik venligst på den første artikel i stedet.')"
+                        class="article-btn btn btn-blue">Læs mere <i class="fas fa-chevron-right"></i></a>
+                </div>
+            </div>
+            <div class="article-box">
+                <div class="article-box-left">
+                    <img class="img-responsive" src="images/320/frontpage/cat_move_in_article_x320.jpg" srcset="images/320/frontpage/cat_move_in_article_x320.jpg 140w,
+                            images/1170/frontpage/cat_move_in_article_x1170.jpg 200w"
+                        sizes="(max-width: 500px) 140px, 200px" alt="Kat med ejer - Artikel billede">
+                </div>
+                <div class="article-box-right">
+                    <p>Overvejer du at få en kat?
+                        Så er denne artikel lige noget for dig!
+                        Hvad skal man tænke over når katten flytter ind.</p>
+                    <a href="#" onclick="alert('Ikke tilgængelig, pga. manglende tid - klik venligst på den første artikel i stedet.')"
+                        class="article-btn btn btn-orange">Læs mere <i class="fas fa-chevron-right"></i></a>
+                </div>
+            </div>
+            <div class="article-box">
+                <div class="article-box-left">
+                    <img class="img-responsive" src="images/320/frontpage/cat_play_article_x320.jpg" srcset="images/320/frontpage/cat_play_article_x320.jpg 140w,
+                            images/1170/frontpage/cat_play_article_x1170.jpg 200w"
+                        sizes="(max-width: 500px) 140px, 200px" alt="Kat leger med bold - Artikel billede">
+                </div>
+                <div class="article-box-right">
+                    <p>Katte har behov for stimulation. <br>
+                        Om de leger selv, eller med dig er lige meget</p>
+                    <a href="#" onclick="alert('Ikke tilgængelig, pga. manglende tid - klik venligst på den første artikel i stedet.')"
+                        class="article-btn btn btn-red">Læs mere <i class="fas fa-chevron-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="footer-box-left">
+            <a class="footer-link" target="_blank" href="https://www.mars.com/global/policies/privacy/pp-danish">Privatpolitik</a>
+            <a class="footer-link" target="_blank" href="https://www.mars.com/global/policies/cookie/cn-danish">Cookies</a>
+        </div>
+        <div id="footer-box-right">
+            <a class="footer-link" target="_blank" href="https://www.mars.com/global/policies/legal/ld-danish">Brugsbetingelser</a>
+            <a class="footer-link" target="_blank" href="https://international.mars.com/Nordics/en/about-mars/denmark-contactus.aspx">Kontakt
+                os</a>
+        </div>
+        <a id="footer-inc" class="footer-link" href="https://www.mars.com/uk/en/">Mars Inc.</a>
+    </footer>
+    <script>
+
+        //The element we want to manipulate based on the trigger state
+        var element = document.getElementById('responsive-nav');
+        //the element with the id nav-toggle is our trigger for displaying the responsive nav
+        var trigger = document.getElementById('nav-toggle');
+
+        //When the trigger is clicked
+        trigger.addEventListener('click', function (e) {
+            //Prevent default behaviour (like a link sending you somewhere)
+            e.preventDefault();
+            element.classList.toggle('hide'); // add/remove the class 'hide' depending on current state
+        });
+
+    </script>
+</body>
+
+
+</html>

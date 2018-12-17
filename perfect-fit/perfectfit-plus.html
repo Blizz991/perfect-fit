@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Perfect Fit+ tilmedling</title>
+    <meta name="description" content="Perfect Fit+ giver adgang til special tilbud og råd tilegnet din kat fra vores eksperter" />
+    <!-- Favicon from the official website: https://www.perfect-fit.dk/ -->
+    <link rel="icon" type="image/png" href="favicon.ico" />
+    <link rel="stylesheet" href="css/MainStyle.min.css">
+    <!-- Load fonts from google -->
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,600%7CRoboto" rel="stylesheet">
+    <!-- Load fontawesome 5.6.1 for icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html">
+                <!-- Logo is from the official website: https://www.perfect-fit.dk/ -->
+                <img id="nav-logo" src="images/pf-logo-cat.svg" alt="Perfect Fit logo">
+            </a>
+            <div id="nav-links">
+                <a href="index.html">Forside</a>
+                <a href="artikler.html">Gode råd</a>
+                <a class="active" href="perfectfit-plus.html">Bliv medlem af Perfect Fit +</a>
+                <a href="filosofi.html">Vores filosofi</a>
+            </div>
+            <i id="nav-toggle" class="fas fa-bars fa-3x"></i>
+        </nav>
+        <div id="responsive-nav" class="hide">
+            <a href="index.html">Forside</a>
+            <a href="artikler.html">Artikler</a>
+            <a class="active" href="perfectfit-plus.html">Bliv medlem af Perfect Fit +</a>
+            <a href="filosofi.html">Vores filosofi</a>
+        </div>
+    </header>
+    <main>
+        <div id="perfectfit-signup-intro">
+            <h1>Bliv Perfect Fit+ Medlem</h1>
+            <div class="signup-intro-fact-box">
+                <i class="fas fa-gift fa-2x"></i> <span>Special tilbud på Perfect Fit&trade; produkter</span>
+            </div>
+            <div class="signup-intro-fact-box">
+                <i class="far fa-comments fa-2x"></i> <span>Ekspertråd tilegnet din kats behov</span>
+            </div>
+            <div class="signup-intro-fact-box">
+                <i class="fas fa-plus fa-2x"></i><span class="bold-text">Meget mere!</span>
+            </div>
+        </div>
+        <h2>Tilmeld dig nu</h2>
+        <form onsubmit="alert('Dit medlemsskab er nu oprettet, vi kontakter dig snarest')" id="perfect-fit-signup-desktop-container">
+            <div class="perfect-fit-signup-container-box">
+                <div id="perfectfit-signup-form">
+                    <h3>Fortæl os om din kat</h3>
+                    <div class="form-group">
+                        <label for="cat-name">Din kats navn</label>
+                        <input id="cat-name" type="text" required>
+                    </div>
+                    <div class="form-group">
+                        <label style="display:block;">Din kats køn</label>
+                        <input type="radio" name="cat-gender" id="cat-gender-female" value="cat-female" checked>
+                        <label for="cat-gender-female">Hun</label>
+                        <input type="radio" name="cat-gender" id="cat-gender-male" value="cat-male">
+                        <label for="cat-gender-male">Han</label>
+                    </div>
+                    <div class="form-group">
+                        <label for="cat-age">Din kats alder</label>
+                        <input type="number" id="cat-age" value="0" min="0" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="cat-born-month">Hvilken måned er din kat født?</label>
+                        <select name="cat-born-month" id="cat-born-month" required>
+                            <option value="" disabled selected>Vælg måned</option>
+                            <option value="Januar">Januar</option>
+                            <option value="Februar">Februar</option>
+                            <option value="Marts">Marts</option>
+                            <option value="April">April</option>
+                            <option value="Maj">Maj</option>
+                            <option value="Juni">Juni</option>
+                            <option value="Juli">Juli</option>
+                            <option value="August">August</option>
+                            <option value="August">August</option>
+                            <option value="September">September</option>
+                            <option value="Oktober">Oktober</option>
+                            <option value="November">November</option>
+                            <option value="December">December</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label style="display:block;">Hvor bruger din kat det mester af sin tid?</label>
+                        <input type="radio" name="cat-habit" id="cat-habit-out" value="cat-habit-out" checked>
+                        <label for="cat-habit-out">Ude</label>
+                        <input type="radio" name="cat-habit" id="cat-habit-in" value="cat-habit-in">
+                        <label for="cat-habit-in">Inde</label>
+                        <input type="radio" name="cat-habit" id="cat-habit-both" value="cat-habit-both">
+                        <label for="cat-habit-both">Begge dele</label>
+                    </div>
+                </div>
+            </div>
+            <div class="perfect-fit-signup-container-box">
+                <h3>Dine informationer</h3>
+                <div class="form-group">
+                    <label for="user-name">Fornavn</label>
+                    <input id="user-name" type="text" required>
+                </div>
+                <div class="form-group">
+                    <label for="user-surname">Efternavn</label>
+                    <input id="user-surname" type="text" required>
+                </div>
+                <div class="form-group">
+                    <label for="user-email">Email adresse</label>
+                    <input id="user-email" type="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="user-password">Opret password</label>
+                    <input id="user-password" type="password" required>
+                </div>
+                <div class="form-group">
+                    <!-- Validation not implemented -->
+                    <label for="user-confirm-password">Bekræft password</label>
+                    <input id="user-confirm-password" type="password" required>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" name="user-age-confirm" id="user-age-confirm" required>
+                    <label for="user-age-confirm">Jeg bekræfter hermed jeg er over 16 år</label>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" name="user-newsletter-consent" id="user-newsletter-consent" checked>
+                    <label for="user-newsletter-consent">Jeg vil gerne modtage nyhedsbrev / tilbud</label>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" name="user-legal-confirm" id="user-legal-confirm" required>
+                    <label for="user-legal-confirm">Jeg godtager <a target="_blank" href="https://www.mars.com/global/policies/legal/ld-danish">brugsbetingelserne</a></label>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-default">Opret Perfect
+                        Fit+
+                        medlemsskab</button>
+                </div>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <div id="footer-box-left">
+            <a class="footer-link" target="_blank" href="https://www.mars.com/global/policies/privacy/pp-danish">Privatpolitik</a>
+            <a class="footer-link" target="_blank" href="https://www.mars.com/global/policies/cookie/cn-danish">Cookies</a>
+        </div>
+        <div id="footer-box-right">
+            <a class="footer-link" target="_blank" href="https://www.mars.com/global/policies/legal/ld-danish">Brugsbetingelser</a>
+            <a class="footer-link" target="_blank" href="https://international.mars.com/Nordics/en/about-mars/denmark-contactus.aspx">Kontakt
+                os</a>
+        </div>
+        <a id="footer-inc" class="footer-link" href="https://www.mars.com/uk/en/">Mars Inc.</a>
+    </footer>
+    <script>
+
+        //The element we want to manipulate based on the trigger state
+        var element = document.getElementById('responsive-nav');
+        var trigger = document.getElementById('nav-toggle'); //the element with the id nav-toggle is our trigger for displaying the responsive nav
+
+        //When the trigger is clicked
+        trigger.addEventListener('click', function (e) {
+            //Prevent default behaviour (like a link sending you somewhere)
+            e.preventDefault();
+            element.classList.toggle('hide'); // add/remove the class 'hide' depending on current state
+        });
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,583 @@
+body {
+    font-family: 'Roboto', 'Arial', 'Helvetica', sans-serif;
+    color: #000;
+    margin:0;
+}
+
+h1,
+h2 {
+    font-family: 'Oswald:600', 'Arial', 'Helvetica', sans-serif;
+    color: #7d7d7d;
+    padding:15px;
+    margin-bottom:0;
+}
+
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Oswald:400', 'Arial', 'Helvetica', sans-serif;
+    color: #5d5d5d;
+}
+
+footer {
+    border: 1px solid #6a6c71;
+    min-height: 100px;
+    background-color: #6a6c71;
+}
+
+footer>div {
+    display: flex;
+    margin: auto;
+}
+
+.footer-link {
+    padding: 15px;
+    width: 50%;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+}
+
+.footer-link:hover,
+.footer-link:focus,
+.footer-link:active {
+    color: #3d3d3d;
+}
+
+#footer-inc {
+    margin: auto;
+    text-align: center;
+    display: block;
+}
+
+nav {
+    height: 65px;
+    border-bottom: solid 1px #6a6c71;
+    display: flex;
+}
+
+#nav-logo {
+    height: 65px;
+    max-width: 200px;
+    margin-left: 15px;
+}
+
+/* Hide normal navigation links by default, since it's not used on mobile */
+
+#nav-links {
+    display: none;
+}
+
+#nav-toggle {
+    color: #6a6c71;
+    margin-left: auto;
+    padding: 10px;
+}
+
+#nav-toggle:hover {
+    cursor: pointer;
+}
+
+#responsive-nav {
+    display: flex;
+    height: 200px;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 66px;
+    z-index: 99;
+    background-color: #fff;
+}
+
+#responsive-nav>a {
+    box-sizing: border-box;
+    border-bottom: 1px solid #6a6c71;
+    padding: 15px;
+    width: 100vw;
+    text-decoration: none;
+    color: #6a6c71;
+    font-weight: bold;
+}
+
+#responsive-nav>a:hover,
+#responsive-nav>a.active {
+    background-color: #6a6a6a;
+    color: #fff;
+}
+
+#carousel {
+    position: relative;
+}
+
+.carouselIndicators {
+    position: absolute;
+    display: flex;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.carouselIndicator {
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background-color: #9d9d9d;
+    margin: 0 2px;
+}
+
+.carouselIndicator.active {
+    background-color: #3d3d3d;
+    color: #fff;
+}
+
+.carouselImg{
+    width:100%;
+}
+
+.main-heading {
+    text-align: center;
+}
+
+.article-box {
+    border: 1px solid #6a6c71;
+    box-sizing: border-box;
+    display: flex;
+    min-height:180px;
+}
+
+.article-box-left {
+    height: 100%;
+    padding: 1%;
+}
+
+.article-box-right {
+    width: 57%;
+    padding: 1% 1% 1% 0;
+    margin: 0;
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.article-btn {
+    display:block;
+    text-align: center;
+    width:100%;
+}
+
+    .article-btn i{
+        margin-left:5px;
+    }
+
+input {
+    padding: 15px;
+    display: block;
+}
+
+#newsletter-box>h2 {
+    text-align: center;
+}
+
+#newsletter-box>p {
+    padding: 15px;
+}
+
+#newsletter-box input {
+    margin: 0 auto 10px auto;
+    width: 50%;
+}
+
+#newsletter-box button {
+    margin: 0 auto 15px auto;
+    display: block;
+}
+
+#article-main {
+    position: relative;
+}
+
+#article-container {
+    width: 100%;
+    border: 1px solid #6a6c71;
+    display: flex;
+    padding: 15px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+
+#article-container>h1,
+#article-container>h2 {
+    width: 100%;
+}
+
+#social-icons {
+    margin: 15px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#social-icons>h3 {
+    width: 100%;
+    text-align: center;
+}
+
+#social-icons>a {
+    color: #3d3d3d;
+    margin: 0 10px;
+}
+
+#social-icons>a:hover {
+    color: #6a6a6a;
+}
+
+#philosophy-intro-container {
+    padding: 15px;
+}
+
+#philosophy-intro-container img {
+    height: 70px;
+    margin: auto;
+    display: block;
+}
+
+#philosophy-themes-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.philosophy-theme-single-container {
+    text-align: center;
+}
+
+.philosophy-theme-single-container>img {
+    width: 64px;
+    height: 64px;
+}
+
+#philosophy-articles-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.philosophy-article-single-container{
+    width:100%;
+}
+
+.philosophy-article-single-container>div {
+    box-sizing: border-box;
+    border: 1px solid #6a6c71;
+    display: flex;
+    padding: 15px;
+    margin-top: 15px;
+}
+
+.philosophy-article-single-container>p,
+.philosophy-article-single-container>h4 {
+    padding: 15px;
+    margin: 0 auto;
+}
+
+#perfectfit-signup-intro {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+}
+
+#perfectfit-signup-intro>h1 {
+    font-size: 1.6rem;
+}
+
+.signup-intro-fact-box {
+    width: 100%;
+}
+
+.signup-intro-fact-box>i {
+    width: 32px;
+    padding-right: 5px;
+    text-align: center;
+}
+
+.signup-intro-fact-box>span {
+    font-size: 0.98rem;
+}
+
+.perfect-fit-signup-container-box {
+    padding: 0 15px 15px 15px;
+}
+
+.total5-img {
+    margin: auto;
+    display: block;
+    padding: 10px;
+}
+
+.form-group {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.form-group>input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: 80%;
+}
+
+.form-group>input[type="radio"],
+input[type="checkbox"] {
+    display: inline;
+}
+
+.form-group>select {
+    width: 80%;
+    display: block;
+}
+
+input::placeholder {
+    font-size: 1.2rem;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn {
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.btn-default {
+    background-color: #6a6c71;
+    border-color: #6a6c71;
+    color: #fff;
+}
+
+.btn-default:hover,
+.btn-default:active,
+.btn-default:focus {
+    background-color: #fff;
+    color: #6a6c71;
+}
+
+.btn-blue {
+    background-color: #1f63b0;
+    border-color: #1f63b0;
+    color: #fff;
+}
+
+.btn-blue:hover,
+.btn-blue:active,
+.btn-blue:focus {
+    background-color: #fff;
+    color: #1f63b0;
+}
+
+.btn-green {
+    background-color: #22a636;
+    border-color: #22a636;
+    color: #fff;
+}
+
+.btn-green:hover,
+.btn-green:active,
+.btn-green:focus {
+    background-color: #fff;
+    color: #22a636;
+}
+
+.btn-red {
+    background-color: #d41768;
+    border-color: #d41768;
+    color: #fff;
+}
+
+.btn-red:hover,
+.btn-red:active,
+.btn-red:focus {
+    background-color: #fff;
+    color: #d41768;
+}
+
+.btn-orange {
+    background-color: #f7901c;
+    border-color: #f7901c;
+    color: #fff;
+}
+
+.btn-orange:hover,
+.btn-orange:active,
+.btn-orange:focus {
+    background-color: #fff;
+    color: #f7901c;
+}
+
+.title-green {
+    color: #22a636;
+}
+
+.title-blue {
+    color: #1f63b0;
+}
+
+.title-red {
+    color: #d41768;
+}
+
+.title-orange {
+    color: #f7901c;
+}
+
+.container-green {
+    background-color: #22a636;
+}
+
+.container-blue {
+    background-color: #1f63b0;
+}
+
+.container-red {
+    background-color: #d41768;
+}
+
+.container-orange {
+    background-color: #f7901c;
+}
+
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.title-white {
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+.hide {
+    display: none !important;
+}
+
+/* Responsive CSS */
+
+/* As tablet layout is the same as mobile, we only have queries specific for desktop/laptops (1170px or above) */
+
+@media (min-width: 1170px) {
+    body {
+        border: 1px solid #6a6c71;
+        max-width: 1170px;
+        margin: auto;
+    }
+    /* Hide nav toggle since we use the non mobile menu instead */
+    #nav-toggle {
+        display: none;
+    }
+    #nav-links {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        margin-left: auto;
+    }
+    #nav-links a {
+        justify-content: center;
+        padding: 15px;
+        text-decoration: none;
+        color: #6a6c71;
+        font-size: 1.2rem;
+        border-right: 1px solid #6a6c71;
+        box-sizing: border-box;
+        font-weight: bold;
+    }
+    #nav-links a:first-of-type {
+        border-left: 1px solid #6a6c71;
+    }
+    #nav-links a:last-of-type {
+        border-right: none;
+    }
+    #nav-links a:hover,
+    #nav-links a:focus,
+    #nav-links a:active,
+    #nav-links a.active {
+        background-color: #6a6c71;
+        color: #fff;
+    }
+    /* Adjust the size of the carousel indicators to make them easier to see */
+    .carouselIndicator {
+        height: 24px;
+        width: 24px;
+    }
+    #article-boxes {
+        width: 66.6%;
+    }
+    .article-box {
+        width: 49%;
+        display: inline-flex;
+    }
+    #newsletter-box {
+        width: 33.3%;
+        border:1px solid #6a6c71;
+    }
+
+    #newsletter-box h2, #newsletter-box p{
+        margin:0;
+    }
+
+    #main-content{
+        display:flex;
+    }
+
+    .total5-img {
+        padding:0;
+    }
+
+    footer{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content: center;
+    }
+
+    footer div{
+        margin:0;
+        justify-content: center;
+    }
+
+    #footer-inc{
+        width:100%;
+    }
+
+    #perfect-fit-signup-desktop-container{
+        display:inline-flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width:100%;
+    }
+
+    .perfect-fit-signup-container-box{
+        width:45%;
+    }
+
+    #article-container{
+        justify-content: space-around;
+    }
+
+    #philosophy-themes-container{
+        width:30%;
+        margin:auto;
+    }
+
+    #philosophy-intro-container{
+        text-align: center;
+    }
+}
